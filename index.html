@@ -68,6 +68,41 @@
           <h1 class="hero-header">Effective Solutions for Your Business</h1>
           <button type="button" class="order-service">Order Service</button>
         </div>
+        <div class="form-container">
+          <form class="form-modal">
+            <svg width="8" height="8">
+              <use href="/images/icons.svg#icon-crost"></use>
+            </svg>
+            <p>Leave your contacts and we will call you back</p>
+            <label for="username">
+              Name
+              <input class="form-input" type="text" name="username" required
+            /></label>
+
+            <label for="phone"
+              >Phone <input class="form-input" type="tel" name="phone" required
+            /></label>
+            <label for="user-email"
+              >Email
+              <input class="form-input" type="email" name="user-email" required
+            /></label>
+            <label for="comment"
+              >Comment
+              <textarea
+                name="comment"
+                placeholder="Text input"
+                rows="6"
+                cols="42"
+              ></textarea>
+            </label>
+
+            <input type="checkbox" name="agreement" />
+            <label for="agreement">
+              I accept the terms and conditions of the Privacy Policy</label
+            >
+            <button type="submit">Send</button>
+          </form>
+        </div>
       </section>
       <!-- SECTION FEATURES -->
       <section class="content-features">
@@ -557,6 +592,18 @@
             </li>
           </ul>
         </div>
+        <form class="footer-subscribe">
+          <div>
+            <label for="subscribe"> Subscribe</label>
+            <input type="text" placeholder="E-mail" name="subscribe" />
+          </div>
+          <button type="submit">
+            Subscribe
+            <svg width="24" height="24">
+              <use href="/images/icons.svg#icon-telegram"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
   </body>

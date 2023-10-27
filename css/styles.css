@@ -189,6 +189,30 @@ a {
   background-color: #404bbf;
 }
 
+.form-container {
+  max-width: 408px;
+  max-height: 584px;
+  background-color: #fcfcfc;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+.form-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px;
+  margin: 0;
+}
+.form-modal label {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input {
+  width: 360px;
+  border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+}
 /* SECTION FEATURES */
 
 .feature-icon-container {
@@ -468,10 +492,9 @@ a {
 /* FOOTER */
 
 .footer-container {
-  margin: 0;
   width: fit-content;
-  margin-left: 156px;
-  margin-right: 120px;
+  /* margin-left: 156px;
+  margin-right: 120px; */
   display: flex;
   flex-direction: row;
   align-items: baseline;
@@ -548,4 +571,56 @@ a {
 }
 .footer-icon {
   fill: #f4f4fd;
+}
+
+form {
+  display: flex;
+  gap: 48px;
+  margin-left: 80px;
+  align-items: flex-end;
+}
+.footer-subscribe button {
+  display: inline-flex;
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  height: 40px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+
+  border: none;
+  border-radius: 4px;
+  background: #4d5ae5;
+}
+
+.footer-subscribe label {
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+
+.footer-subscribe input {
+  width: 264px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  background-color: #2e2f42;
+  padding: 8px 16px;
+
+  border-radius: 4px;
+  border: 1px solid #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+input::placeholder {
+  color: #fff;
 }
