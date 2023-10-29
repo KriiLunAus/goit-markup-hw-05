@@ -66,12 +66,21 @@
       <section class="hero">
         <div class="hero-container container">
           <h1 class="hero-header">Effective Solutions for Your Business</h1>
-          <button type="button" class="order-service">Order Service</button>
+          <button
+            onclick="document.getElementById('modal').style.display='block'"
+            type="button"
+            class="order-service"
+          >
+            Order Service
+          </button>
         </div>
-        <div class="form-container">
+        <div id="modal" class="form-container">
           <form class="form-modal">
-            <div class="crost-container">
-              <svg class="form-crost" width="8" height="8">
+            <div
+              onclick="document.getElementById('modal').style.display='none'"
+              class="close-container"
+            >
+              <svg class="form-close" width="8" height="8">
                 <use href="/images/icons.svg#icon-crost"></use>
               </svg>
             </div>
@@ -79,17 +88,39 @@
             <p class="form-paragraph">
               Leave your contacts and we will call you back
             </p>
-            <label for="username">
+            <label class="form-label" for="username">
               Name
-              <input class="form-input" type="text" name="username" required
+              <svg class="icon">
+                <use href="images/icons.svg#icon-person"></use>
+              </svg>
+              <input
+                class="form-input input-username"
+                type="text"
+                name="username"
+                required
             /></label>
 
-            <label for="phone"
-              >Phone <input class="form-input" type="tel" name="phone" required
+            <label class="form-label" for="phone"
+              >Phone
+              <svg class="icon">
+                <use href="images/icons.svg#icon-phone"></use>
+              </svg>
+              <input
+                class="form-input input-phone"
+                type="tel"
+                name="phone"
+                required
             /></label>
-            <label for="user-email"
+            <label class="form-label" for="user-email"
               >Email
-              <input class="form-input" type="email" name="user-email" required
+              <svg class="icon">
+                <use href="images/icons.svg#icon-email"></use>
+              </svg>
+              <input
+                class="form-input input-email"
+                type="email"
+                name="user-email"
+                required
             /></label>
             <label for="comment"
               >Comment
