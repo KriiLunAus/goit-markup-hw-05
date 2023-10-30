@@ -558,7 +558,6 @@ a {
   padding: 8px 24px;
   justify-content: center;
   align-items: center;
-  gap: 16px;
   min-width: 165px;
 
   font-weight: 500;
@@ -585,25 +584,29 @@ a {
   margin-left: 80px;
 }
 
-.footer-subscribe input {
+.footer-input {
   width: 264px;
+  height: 40px;
   color: #fff;
   font-size: 12px;
   font-weight: 400;
-  line-height: 2;
+  line-height: 1.5;
   letter-spacing: 0.04em;
-  background-color: #2e2f42;
+  background-color: transparent;
   padding: 8px 16px;
   margin-left: 80px;
   margin-right: 24px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 
   border-radius: 4px;
   border: 1px solid #fff;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 input::placeholder {
   color: #fff;
+}
+.subscribe-icon {
+  margin-left: 16px;
 }
 /* ---------------------------------------------
 Form modal
