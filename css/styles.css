@@ -549,13 +549,20 @@ a {
   fill: #f4f4fd;
 }
 
-.footer-subscribe button {
-  display: inline-flex;
+.footer-subscribe {
+  display: flex;
+  gap: 24px;
+}
+.subscribe-button {
+  display: flex;
   padding: 8px 24px;
   justify-content: center;
   align-items: center;
   gap: 16px;
+  min-width: 165px;
 
+  font-weight: 500;
+  cursor: pointer;
   height: 40px;
   font-size: 16px;
   line-height: 1.5;
@@ -569,6 +576,7 @@ a {
 
 .subscribe-paragraph {
   display: block;
+  font-weight: 500;
   color: #fff;
   font-size: 16px;
   line-height: 1.5;

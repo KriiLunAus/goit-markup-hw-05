@@ -566,9 +566,10 @@
         <div class="subscribe-container">
           <p class="subscribe-paragraph">Subscribe</p>
           <form class="footer-subscribe">
-            <input type="text" placeholder="E-mail" name="subscribe" />
-
-            <button type="submit">
+            <label class="footer-label">
+              <input type="text" placeholder="E-mail" name="subscribe" />
+            </label>
+            <button class="subscribe-button" type="submit">
               Subscribe
               <svg width="24" height="24">
                 <use href="/images/icons.svg#icon-telegram"></use>
@@ -598,6 +599,7 @@
             <use href="images/icons.svg#icon-person"></use>
           </svg>
           <input
+            id="username"
             class="form-input input-username"
             type="text"
             name="username"
@@ -610,6 +612,7 @@
             <use href="images/icons.svg#icon-phone"></use>
           </svg>
           <input
+            id="phone"
             class="form-input input-phone"
             type="tel"
             name="phone"
@@ -621,6 +624,7 @@
             <use href="images/icons.svg#icon-email"></use>
           </svg>
           <input
+            id="user-email"
             class="form-input input-email"
             type="email"
             name="user-email"
@@ -629,6 +633,7 @@
         <label for="comment"
           >Comment
           <textarea
+            id="comment"
             class="comment"
             name="comment"
             placeholder="Text input"
