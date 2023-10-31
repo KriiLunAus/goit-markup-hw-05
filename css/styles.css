@@ -688,6 +688,7 @@ Form modal
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
+  margin-bottom: 4px;
 }
 
 .input-container {
@@ -722,10 +723,15 @@ Form modal
   fill: #4d5ae5;
 }
 .form-paragraph {
+  color: #2e2f42;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  font-weight: 500;
   text-align: center;
+  margin-bottom: 16px;
+}
+.label-textarea-container {
   margin-bottom: 16px;
 }
 
@@ -733,6 +739,9 @@ Form modal
   resize: none;
   width: 100%;
   height: 120px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
   border-radius: 4px;
   color: rgba(46, 47, 66, 0.4);
   border: 1px solid rgba(46, 47, 66, 0.4);
