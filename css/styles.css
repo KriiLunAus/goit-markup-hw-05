@@ -12,7 +12,9 @@ p {
 a {
   display: block;
 }
-
+button {
+  cursor: pointer;
+}
 .container {
   width: 1158px;
   margin: 0 auto;
@@ -611,24 +613,72 @@ input::placeholder {
 /* ---------------------------------------------
 Form modal
 ----------------------------------------- */
-.form-container {
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-wraper {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-
-  max-width: 408px;
-  background-color: #fcfcfc;
+  transform: translate(-50%, -50%) scale(1);
+  width: 408px;
+  min-height: 584px;
+  background: #fcfcfc;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  margin: 0 auto;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 72px 24px 24px 24px;
 }
+
 .form-modal {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 24px;
   margin: 0;
 }
+
+.crost-button {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-close {
+  fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.crost-button:hover,
+.crost-button:focus {
+  background-color: #404bbf;
+  border: none;
+}
+
+.crost-button:hover .form-close,
+.crost-button:focus .form-close {
+  fill: #ffffff;
+}
+
 .form-modal label {
   display: flex;
   flex-direction: column;
@@ -679,7 +729,7 @@ label > input {
   border-color: #404bbf;
 }
 
-.close-container {
+/* .close-container {
   display: flex;
   align-self: flex-end;
   padding: 8px;
@@ -689,15 +739,13 @@ label > input {
   margin-right: 8px;
   margin-bottom: 32px;
 }
-.form-close {
-  fill: #2e2f42;
-}
+
 .close-container:active {
   background-color: #404bbf;
 }
 .close-container:active .form-close {
   fill: #ffffff;
-}
+} */
 
 .form-paragraph {
   font-size: 16px;
@@ -707,6 +755,7 @@ label > input {
 }
 
 .comment {
+  resize: none;
   margin-top: 4px;
   width: 360px;
   height: 120px;
