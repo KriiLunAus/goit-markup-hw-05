@@ -785,7 +785,7 @@ Form modal
   margin-right: 8px;
 }
 
-.checkbox-input:checked + .checkbox-container {
+.checkbox-wraper > input:checked .checkbox-container {
   border: none;
   fill: #f4f4fd;
   background-color: #404bbf;
@@ -824,7 +824,8 @@ Form modal
 }
 
 .form-send {
-  width: 169px;
+  min-width: 169px;
+  font-weight: 500;
   padding: 16px 32px;
   font-size: 16px;
   letter-spacing: 0.04em;
@@ -832,7 +833,13 @@ Form modal
   border-width: 0px;
   border-radius: 4px;
   color: #fff;
+  border: none;
   background: #4d5ae5;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   margin: 0 auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-send:hover {
+  background-color: #404bbf;
 }
