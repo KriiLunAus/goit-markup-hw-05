@@ -767,6 +767,7 @@ Form modal
 .checkbox-wraper {
   display: flex;
   justify-content: left;
+  align-items: flex-end;
   margin-bottom: 24px;
 }
 
@@ -785,7 +786,7 @@ Form modal
   margin-right: 8px;
 }
 
-.checkbox-wraper > input:checked .checkbox-container {
+.visually-hidden:checked + .checkbox-label > .checkbox-container {
   border: none;
   fill: #f4f4fd;
   background-color: #404bbf;
