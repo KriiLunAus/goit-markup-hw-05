@@ -784,6 +784,7 @@ Form modal
   line-height: 1.17;
   letter-spacing: 0.04em;
   text-decoration-line: underline;
+  margin-left: 2px;
 }
 
 .checkbox-icon {
